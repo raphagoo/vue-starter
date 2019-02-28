@@ -1,4 +1,4 @@
-# How I make the project
+# Full description
 
 I've been widely inspired with this article: [How to use Webpack with React: an in-depth tutorial](https://medium.freecodecamp.org/learn-webpack-for-react-a36d4cac5060)
 
