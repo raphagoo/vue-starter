@@ -1,0 +1,26 @@
+{
+    "name": "vue-starter",
+    "version": "0.1.0",
+    "description": "vueJs starter kit",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/psancho/vue-starter.git"
+    },
+    "keywords": ["vue", "webpack", "eslint", "babel"],
+    "author": "Pascal Sancho",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/psancho/gotoReact/issues"
+    },
+    "homepage": "https://github.com/psancho/gotoReact#readme",
+    "main": "index.js",
+    "scripts": {
+        "build": "rimraf dist && webpack -p",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack-serve"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+    }
+}
