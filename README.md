@@ -32,7 +32,7 @@ npm start
 
 Go to http://localhost:8081 in your browser.
 
-Note you can change the port:
+Note you can change the port  (see [devServe.port](https://webpack.js.org/configuration/dev-server/#devserverport) doc):
 
 * either in the `scripts` section of the `package.json`
 
@@ -40,7 +40,7 @@ Note you can change the port:
   "start": "webpack-dev-server --hot --port 9000"
   ```
 
-* or in `webpack.config.js` (see [devServe.port](https://webpack.js.org/configuration/dev-server/#devserverport) doc).
+* or in `webpack.config.js`
 
   ```javascript
   module.exports = {
