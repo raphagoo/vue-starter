@@ -6,7 +6,12 @@
         "type": "git",
         "url": "git+https://github.com/psancho/vue-starter.git"
     },
-    "keywords": ["vue", "webpack", "eslint", "babel"],
+    "keywords": [
+        "vue",
+        "webpack",
+        "eslint",
+        "babel"
+    ],
     "author": "Pascal Sancho",
     "license": "MIT",
     "bugs": {
@@ -17,10 +22,27 @@
     "scripts": {
         "build": "rimraf dist && webpack -p",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "webpack-serve"
+        "start": "webpack-dev-server --hot"
     },
     "dependencies": {
+        "vue": "^2.6.0",
+        "vue-router": "^3.0.0",
+        "vuex": "^3.1.0"
     },
     "devDependencies": {
+        "@babel/core": "^7.3.0",
+        "babel-loader": "^8.0.0",
+        "css-loader": "^2.1.0",
+        "eslint": "^5.15.0",
+        "eslint-loader": "^2.1.0",
+        "eslint-plugin-vue": "^5.2.0",
+        "html-webpack-plugin": "^3.2.0",
+        "node-sass": "^4.11.0",
+        "sass-loader": "^7.1.0",
+        "vue-loader": "^15.7.0",
+        "vue-template-compiler": "^2.6.0",
+        "webpack": "^4.29.0",
+        "webpack-cli": "^3.2.0",
+        "webpack-dev-server": "^3.2.0"
     }
 }
