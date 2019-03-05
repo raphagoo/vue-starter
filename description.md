@@ -1,9 +1,5 @@
 # Full description
 
-I've been widely inspired with this article: [How to use Webpack with React: an in-depth tutorial](https://medium.freecodecamp.org/learn-webpack-for-react-a36d4cac5060)
-
-For the lint material, I've read this one: [React Code Style with ESLint + Babel + Webpack](https://www.robinwieruch.de/react-eslint-webpack-babel/)
-
 Exhaustive list of material can be found here: [vuejs/awesome-vue](https://github.com/vuejs/awesome-vue).
 
 ## Packages
