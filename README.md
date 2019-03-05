@@ -6,6 +6,7 @@ vueJs starter kit, based on my own (and very light) [react experience](https://g
 [![Dependency Status](https://david-dm.org/psancho/vue-starter/status.svg)](https://david-dm.org/psancho/vue-starter#info=dependencies) [![devDependency Status](https://david-dm.org/psancho/vue-starter/dev-status.svg)](https://david-dm.org/psancho/vue-starter#info=devDependencies)
 
 Here is a more complete [description](./description.md).
+
 ## Main features
 
 * Babel
