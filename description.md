@@ -17,7 +17,7 @@ Here is the commented list of dependencies.
 * [ ] [`promise-polyfill`](https://www.npmjs.com/package/promise-polyfill) *not sure if needed with preset-env*
 * [x] [`vue`](https://www.npmjs.com/package/vue) *the Main thing*
 * [x] [`vue-router`](https://router.vuejs.org/) *the official one*
-* [ ] [`vuex`](https://vuex.vuejs.org/) *state management pattern for Vue*
+* [x] [`vuex`](https://vuex.vuejs.org/) *state management pattern for Vue*
 
 ### dev
 
@@ -60,25 +60,20 @@ Here is the commented list of dependencies.
 
 ## TODO
 
-### Choose routing and state libs
-
-
-### Choose a CSS framework
-
-* [Evaluating CSS Frameworks](https://codeburst.io/evaluating-css-frameworks-bulma-vs-foundation-vs-milligram-vs-pure-vs-semantic-vs-uikit-503883bd25a3)
-* [Framework Smackdown: Bootstrap vs Semantic-UI](https://hostpresto.com/blog/framework-smackdown-bootstrap-vs-semantic-ui/)
-* [Twitter Bootstrap vs. Semantic UI](https://www.upwork.com/hiring/development/twitter-bootstrap-vs-semantic-ui/)
-* [ ] [Avalanche](http://colourgarden.net/avalanche/) *grid system*
-
-### Add XHR facilities
-
-* [ ] [`axios`](https://www.npmjs.com/package/axios) *needs 3rd party Promise polyfill*
-* [ ] [`whatwg-fetch`](https://github.com/github/fetch) *isomorphic fetch, lower level than the former*
-* [ ] [`isomorphic-fetch`](https://github.com/matthew-andrews/isomorphic-fetch) *another isomorphic fetch*
-
-### misc
-
-* [ ] [`mini-css-extract-plugin`](https://vue-loader.vuejs.org/guide/extract-css.html) *to have css hot reload*
+* build for prod
+* manage baseHref
+* choose and add XHR facilities:
+  * [ ] [`axios`](https://www.npmjs.com/package/axios) *needs 3rd party Promise polyfill*
+  * [ ] [`whatwg-fetch`](https://github.com/github/fetch) *isomorphic fetch, lower level than the former*
+  * [ ] [`isomorphic-fetch`](https://github.com/matthew-andrews/isomorphic-fetch) *another isomorphic fetch*
+* choose a CSS framework (not sure if I'll do that):
+  * [Evaluating CSS Frameworks](https://codeburst.io/evaluating-css-frameworks-bulma-vs-foundation-vs-milligram-vs-pure-vs-semantic-vs-uikit-503883bd25a3)
+  * [Framework Smackdown: Bootstrap vs Semantic-UI](https://hostpresto.com/blog/framework-smackdown-bootstrap-vs-semantic-ui/)
+  * [Twitter Bootstrap vs. Semantic UI](https://www.upwork.com/hiring/development/twitter-bootstrap-vs-semantic-ui/)
+  * [ ] [Avalanche](http://colourgarden.net/avalanche/) *grid system*
+* other things:
+  * [ ] [`mini-css-extract-plugin`](https://vue-loader.vuejs.org/guide/extract-css.html) *to have css hot reload*
+  * read again vueJs doc (many things I didn't had time to try).
 
 ## PS
 
