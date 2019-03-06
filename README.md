@@ -30,7 +30,7 @@ npm i
 npm start
 ```
 
-Go to http://localhost:8081 in your browser.
+Go to http://localhost:8080 in your browser.
 
 Note you can change the port  (see [devServe.port](https://webpack.js.org/configuration/dev-server/#devserverport) doc):
 
