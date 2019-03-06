@@ -3,8 +3,7 @@ const path = require(`path`);
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const env = process.env.NODE_ENV || 'development';
-console.log(env);
+const env = process.env.NODE_ENV;
 
 module.exports = {
     mode: env,

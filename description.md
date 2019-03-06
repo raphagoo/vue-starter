@@ -29,7 +29,7 @@ Here is the commented list of dependencies.
 * [x] [`babel-loader`](https://www.npmjs.com/package/babel-loader)
 * [ ] [`babel-preset-vue-app`](https://www.npmjs.com/package/babel-preset-vue-app) *???*
 * [ ] [`chalk`](https://www.npmjs.com/package/chalk) *colorizes console output*
-* [ ] [`cross-env`](https://www.npmjs.com/package/cross-env) *run scripts that set and use environment variables across platforms, ie. on Windows*
+* [x] [`cross-env`](https://www.npmjs.com/package/cross-env) *run scripts that set and use environment variables across platforms, ie. on Windows*
 * [x] [`css-loader`](https://www.npmjs.com/package/css-loader) *interprets `@import` & `url()` as `import`*
 * [x] [`eslint`](https://www.npmjs.com/package/eslint)
 * [x] [`eslint-loader`](https://www.npmjs.com/package/eslint-loader)
