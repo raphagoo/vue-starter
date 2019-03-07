@@ -11,15 +11,16 @@ Here is the commented list of dependencies.
 * [ ] [`@babel/polyfill`](https://babeljs.io/docs/en/next/babel-polyfill.html) *Polyfill (old browsers compatibility)*
 * [ ] [`lodash`](https://www.npmjs.com/package/lodash)
 * [ ] [`promise-polyfill`](https://www.npmjs.com/package/promise-polyfill) *not sure if needed with preset-env*
-* [x] [`vue`](https://www.npmjs.com/package/vue) *the Main thing*
+* [x] [`vue`](https://vuejs.org) *the Main thing*
 * [x] [`vue-router`](https://router.vuejs.org/) *the official one*
+* [x] [`vuejs-logger`](https://www.npmjs.com/package/vuejs-logger) *nice console log*
 * [x] [`vuex`](https://vuex.vuejs.org/) *state management pattern for Vue*
 
 ### dev
 
-* [x] [`@babel/core`](https://babeljs.io/docs/en/next/babel-core.html)
+* [x] [`@babel/core`](https://babeljs.io/docs/en/next/babel-core.html) *main transpiler material*
 * [ ] [`@babel/plugin-syntax-dynamic-import`](https://babeljs.io/docs/en/next/babel-plugin-syntax-dynamic-import.html)
-* [ ] [`@babel/preset-env`](https://babeljs.io/docs/en/next/babel-preset-env.html) *detects witch ES version is used (2015, 2016 or 2017)*
+* [x] [`@babel/preset-env`](https://babeljs.io/docs/en/next/babel-preset-env.html) *detects witch ES version is used (2015, 2016 or 2017)*
 * [ ] [`@types/lodash`](https://www.npmjs.com/package/@types/lodash) *???*
 * [ ] [`@vue/babel-preset-jsx`](https://www.npmjs.com/package/@vue/babel-preset-jsx) *JSX templates can be used*
 * [ ] [`@vue/babel-helper-vue-jsx-merge-props`](https://www.npmjs.com/package/@vue/babel-helper-vue-jsx-merge-props) *used by @vue/babel-preset-jsx*
@@ -29,9 +30,9 @@ Here is the commented list of dependencies.
 * [x] [`babel-loader`](https://www.npmjs.com/package/babel-loader)
 * [ ] [`babel-preset-vue-app`](https://www.npmjs.com/package/babel-preset-vue-app) *???*
 * [ ] [`chalk`](https://www.npmjs.com/package/chalk) *colorizes console output*
-* [ ] [`cross-env`](https://www.npmjs.com/package/cross-env) *run scripts that set and use environment variables across platforms, ie. on Windows*
+* [x] [`cross-env`](https://www.npmjs.com/package/cross-env) *run scripts that set and use environment variables across platforms, ie. on Windows*
 * [x] [`css-loader`](https://www.npmjs.com/package/css-loader) *interprets `@import` & `url()` as `import`*
-* [x] [`env-cmd`](https://www.npmjs.com/package/env-cmd) *sets environment variables*
+* [ ] [`env-cmd`](https://www.npmjs.com/package/env-cmd) *sets environment variables*
 * [x] [`eslint`](https://www.npmjs.com/package/eslint)
 * [x] [`eslint-loader`](https://www.npmjs.com/package/eslint-loader)
 * [ ] [`eslint-plugin-import`](https://www.npmjs.com/package/eslint-plugin-import)

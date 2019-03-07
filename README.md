@@ -13,6 +13,7 @@ Here is a more complete [description](./description.md).
 * VueJS
 * Webpack
 * ESLint
+* config file injection
 
 ## Quick start
 
@@ -37,7 +38,7 @@ Note you can change the port  (see [devServe.port](https://webpack.js.org/config
 * either in the `scripts` section of the `package.json`
 
   ```json
-  "start": "webpack-dev-server --hot --port 9000"
+  "start": "cross-env NODE_ENV=development webpack-dev-server --hot --port 9000"
   ```
 
 * or in `webpack.config.js`
