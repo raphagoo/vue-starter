@@ -76,5 +76,10 @@ module.exports = {
             //     // https://github.com/kangax/html-minifier#options-quick-reference
             // } : false,
         }),
-    ]
+    ],
+    resolve: {
+        alias: {
+            config$: path.resolve(__dirname, `config/${env}.js`),
+        }
+    }
 };
