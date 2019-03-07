@@ -77,6 +77,7 @@ module.exports = {
             // } : false,
         }),
     ],
+    devtool: 'inline-source-map',
     resolve: {
         alias: {
             config$: path.resolve(__dirname, `config/${env}.js`),
