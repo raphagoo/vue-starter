@@ -13,7 +13,6 @@ Here is the commented list of dependencies.
 * [ ] [`promise-polyfill`](https://www.npmjs.com/package/promise-polyfill) *not sure if needed with preset-env*
 * [x] [`vue`](https://vuejs.org) *the Main thing*
 * [x] [`vue-router`](https://router.vuejs.org/) *the official one*
-* [x] [`vuejs-logger`](https://www.npmjs.com/package/vuejs-logger) *nice console log*
 * [x] [`vuex`](https://vuex.vuejs.org/) *state management pattern for Vue*
 
 ### dev
@@ -54,7 +53,6 @@ Here is the commented list of dependencies.
 * [x] [`webpack-cli`](https://www.npmjs.com/package/webpack-cli): *needed with webpack ^4.0.1*
 * [x] [`webpack-dev-server`](https://www.npmjs.com/package/webpack-dev-server) *dev server with hot reload*
 * [ ] [`webpack-merge`](https://www.npmjs.com/package/webpack-merge) *merge 2 objects*
-* [ ] [`webpack-serve`](https://www.npmjs.com/package/webpack-serve) *serve locally for dev purpose*
 
 ## TODO
 

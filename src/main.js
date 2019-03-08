@@ -1,24 +1,15 @@
 import Vue from 'vue'
-import VueLogger from 'vuejs-logger';
+import $log from 'logger'
 
 import App from './App.vue'
 import config from 'config'
 import router from './router'
 import store from './store'
 
-// Vue.config.productionTip = false
-const logOptions = {
-    // isEnabled: false,
-    logLevel : config.logLevel || 'error',
-    // stringifyArguments : false,
-    // showLogLevel : true,
-    // showMethodName : true,
-    // separator: '|',
-    showConsoleColors: true,
-};
+// prevents from display notice about running in dev mode
+Vue.config.productionTip = false
 
-Vue.use(VueLogger, logOptions);
-Vue.$log.info('config:', config);
+$log.info('config:', config);
 
 new Vue({
     router,

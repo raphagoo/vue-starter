@@ -81,6 +81,7 @@ module.exports = {
     resolve: {
         alias: {
             config$: path.resolve(__dirname, `config/${env}.js`),
+            logger$: path.resolve(__dirname, 'tools/consoleLogger.js'),
         }
     }
 };

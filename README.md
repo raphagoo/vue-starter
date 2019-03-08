@@ -14,6 +14,7 @@ Here is a more complete [description](./description.md).
 * Webpack
 * ESLint
 * config file injection
+* very light custom logger
 
 ## Quick start
 
@@ -63,3 +64,7 @@ npm run build
 ## License
 
 [MIT](./LICENCE)
+
+## Logger
+
+see comments in [tools/consoleLogger.js](./tools/consoleLogger.js)
