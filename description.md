@@ -58,7 +58,7 @@ Here is the commented list of dependencies.
 
 * build for prod
 * manage baseHref
-* choose and add XHR facilities:
+* choose and add XHR facilities (tests again [REST test test...](https://resttesttest.com))
   * [ ] [`axios`](https://www.npmjs.com/package/axios) *needs 3rd party Promise polyfill*
   * [ ] [`whatwg-fetch`](https://github.com/github/fetch) *isomorphic fetch, lower level than the former*
   * [ ] [`isomorphic-fetch`](https://github.com/matthew-andrews/isomorphic-fetch) *another isomorphic fetch*
