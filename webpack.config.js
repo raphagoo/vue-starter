@@ -1,17 +1,21 @@
 const path = require(`path`)
 const fs = require('fs')
 const chalk = require('chalk')
+const mri = require('mri')
 
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const env = process.env.NODE_ENV || 'development'
 
-const configPath = path.resolve(__dirname, `config/${env}.js`)
+const publishConfig = mri(process.argv.slice(2))['publish-config'] || true
+const target = (publishConfig === true) ? env : publishConfig;
+
+const configPath = path.resolve(__dirname, `config/${target}.js`)
 if (fs.existsSync(configPath)) {
-    console.log(chalk.black.bgBlue('INFO') + ' Using ' + chalk.magenta(env) + ' configuration.')
+    console.log(chalk.black.bgBlue('INFO') + ' Using ' + chalk.magenta(target) + ' configuration.')
 } else {
-    console.log(chalk.black.bgYellow('WARN') + ' Config file not found for ' + chalk.magenta(env) + ', aborting.')
+    console.log(chalk.black.bgYellow('WARN') + ' Config file not found for ' + chalk.magenta(target) + ', aborting.')
     process.exit()
 }
 

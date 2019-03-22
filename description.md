@@ -40,6 +40,7 @@ Here is the commented list of dependencies.
 * [ ] [`html-loader`](https://www.npmjs.com/package/html-loader) *better than `raw-loader`*
 * [ ] [`mini-css-extract-plugin`](https://www.npmjs.com/package/mini-css-extract-plugin) *replaces `extract-text-webpack-plugin` and works with webpack 4*
 * [ ] [`minimist`](https://www.npmjs.com/package/minimist) *commandline parser*
+* [x] [`mri`](https://www.npmjs.com/package/mri) *light commandline parser*
 * [x] [`node-sass`](https://www.npmjs.com/package/node-sass)
 * [ ] [`postcss-loader`](https://www.npmjs.com/package/postcss-loader) *adds vendor rules*
 * [ ] [`rimraf`](https://www.npmjs.com/package/rimraf) *deletes recursively a directory*

@@ -61,6 +61,13 @@ Just launch the following:
 npm run build
 ```
 
+By default, it uses the `config/production.js` file.
+To use an alternate configuration, launch the following:
+
+```bash
+npm run build myServerConfig
+```
+
 ## License
 
 [MIT](./LICENCE)
