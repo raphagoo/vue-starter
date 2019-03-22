@@ -74,4 +74,4 @@ npm run build myServerConfig
 
 ## Logger
 
-see comments in [tools/consoleLogger.js](./tools/consoleLogger.js)
+see comments in [src/interfaces/consoleLogger.js](./src/interfaces/consoleLogger.js)
