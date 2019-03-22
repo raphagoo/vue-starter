@@ -5,8 +5,10 @@ const mri = require('mri')
 
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { BaseHrefWebpackPlugin } = require('base-href-webpack-plugin');
 
 const env = process.env.NODE_ENV || 'development'
+const isDev = env === 'development'
 
 const publishConfig = mri(process.argv.slice(2))['publish-config'] || true
 const target = (publishConfig === true) ? env : publishConfig;
@@ -19,11 +21,14 @@ if (fs.existsSync(configPath)) {
     process.exit()
 }
 
+const baseHref = require(configPath).baseHref || '/';
+console.log(chalk.black.bgBlue('INFO') + ' baseHref:', baseHref)
+
 module.exports = {
     mode: env,
     entry: path.join(__dirname, `src`, `main.js`),
     output: {
-        publicPath: `/`,
+        publicPath: isDev ? `/` : baseHref,
     },
     module: {
         rules: [
@@ -89,6 +94,9 @@ module.exports = {
             //     // More options:
             //     // https://github.com/kangax/html-minifier#options-quick-reference
             // } : false,
+        }),
+        new BaseHrefWebpackPlugin({
+            baseHref
         }),
     ],
     devtool: 'inline-source-map',
