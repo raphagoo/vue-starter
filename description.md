@@ -58,17 +58,13 @@ Here is the commented list of dependencies.
 
 ## TODO
 
-* build for prod
-* manage baseHref
 * choose and add XHR facilities (tests again [REST test test...](https://resttesttest.com))
-  * [ ] [`axios`](https://www.npmjs.com/package/axios) *needs 3rd party Promise polyfill*
+  * [ ] [`axios`](https://www.npmjs.com/package/axios) *needs 3rd party Promise polyfill (my 1st choice)*
   * [ ] [`whatwg-fetch`](https://github.com/github/fetch) *isomorphic fetch, lower level than the former*
   * [ ] [`isomorphic-fetch`](https://github.com/matthew-andrews/isomorphic-fetch) *another isomorphic fetch*
-* choose a CSS framework (not sure if I'll do that):
-  * [Evaluating CSS Frameworks](https://codeburst.io/evaluating-css-frameworks-bulma-vs-foundation-vs-milligram-vs-pure-vs-semantic-vs-uikit-503883bd25a3)
-  * [Framework Smackdown: Bootstrap vs Semantic-UI](https://hostpresto.com/blog/framework-smackdown-bootstrap-vs-semantic-ui/)
-  * [Twitter Bootstrap vs. Semantic UI](https://www.upwork.com/hiring/development/twitter-bootstrap-vs-semantic-ui/)
-  * [ ] [Avalanche](http://colourgarden.net/avalanche/) *grid system*
+* choose a responsive CSS grid (UI frameworks may do the trick, but I prefer something lighter):
+  * [ ] [`avalanche`](http://colourgarden.net/avalanche/) *responsive grid system*
+  * [ ] [`flexboxgrid`](http://flexboxgrid.com/) *another responsive grid system (my 1st choice)*
 * other things:
   * [ ] [`mini-css-extract-plugin`](https://vue-loader.vuejs.org/guide/extract-css.html) *to have css hot reload*
   * read again vueJs doc (many things I didn't had time to try).
