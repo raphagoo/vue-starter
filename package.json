@@ -20,7 +20,7 @@
     "homepage": "https://github.com/psancho/gotoReact#readme",
     "main": "index.js",
     "scripts": {
-        "build": "rimraf dist && webpack -p",
+        "build": "rimraf dist && cross-env NODE_ENV=production webpack -p",
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "cross-env NODE_ENV=development webpack-dev-server --hot"
     },
@@ -33,6 +33,7 @@
         "@babel/core": "^7.3.0",
         "@babel/preset-env": "^7.3.0",
         "babel-loader": "^8.0.0",
+        "chalk": "^2.4.2",
         "cross-env": "^5.2.0",
         "css-loader": "^2.1.0",
         "eslint": "^5.15.0",

@@ -1,9 +1,19 @@
 const path = require(`path`)
+const fs = require('fs')
+const chalk = require('chalk')
 
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-const env = process.env.NODE_ENV
+const env = process.env.NODE_ENV || 'development'
+
+const configPath = path.resolve(__dirname, `config/${env}.js`)
+if (fs.existsSync(configPath)) {
+    console.log(chalk.black.bgBlue('INFO') + ' Using ' + chalk.magenta(env) + ' configuration.')
+} else {
+    console.log(chalk.black.bgYellow('WARN') + ' Config file not found for ' + chalk.magenta(env) + ', aborting.')
+    process.exit()
+}
 
 module.exports = {
     mode: env,
@@ -80,7 +90,7 @@ module.exports = {
     devtool: 'inline-source-map',
     resolve: {
         alias: {
-            config$: path.resolve(__dirname, `config/${env}.js`),
+            config$: configPath,
             logger$: path.resolve(__dirname, 'src/interfaces/consoleLogger.js'),
         }
     }

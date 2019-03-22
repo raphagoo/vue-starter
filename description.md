@@ -28,7 +28,7 @@ Here is the commented list of dependencies.
 * [ ] [`babel-eslint`](https://www.npmjs.com/package/babel-eslint) *lints ES6 code*
 * [x] [`babel-loader`](https://www.npmjs.com/package/babel-loader)
 * [ ] [`babel-preset-vue-app`](https://www.npmjs.com/package/babel-preset-vue-app) *???*
-* [ ] [`chalk`](https://www.npmjs.com/package/chalk) *colorizes console output*
+* [x] [`chalk`](https://www.npmjs.com/package/chalk) *colorizes console output*
 * [x] [`cross-env`](https://www.npmjs.com/package/cross-env) *run scripts that set and use environment variables across platforms, ie. on Windows*
 * [x] [`css-loader`](https://www.npmjs.com/package/css-loader) *interprets `@import` & `url()` as `import`*
 * [ ] [`env-cmd`](https://www.npmjs.com/package/env-cmd) *sets environment variables*
