@@ -1,9 +1,9 @@
-const path = require(`path`);
+const path = require(`path`)
 
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-const env = process.env.NODE_ENV;
+const env = process.env.NODE_ENV
 
 module.exports = {
     mode: env,
