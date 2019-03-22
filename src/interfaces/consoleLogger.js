@@ -16,15 +16,16 @@
  *     // ...
  *     $log.info('my message')
  */
-import config from 'config'
+import $config from 'config'
 
-const logLevelConf = config.logLevel;
+const logLevelConf = $config.logLevel;
 
 const LOG_LEVELS = ['trace', 'debug', 'info', 'warn', 'error']
 
 const logLevel = (LOG_LEVELS.includes(logLevelConf)) ? logLevelConf : 'error';
 
 function _log(level, ...msg) {
+    /* eslint-disable no-console */
     if (LOG_LEVELS.indexOf(level) >= LOG_LEVELS.indexOf(logLevel)) {
         switch (level) {
         case 'error':
@@ -41,6 +42,7 @@ function _log(level, ...msg) {
             break;
         }
     }
+    /* eslint-enable no-console */
 }
 
 export default {
