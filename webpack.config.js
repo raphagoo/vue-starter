@@ -107,3 +107,7 @@ module.exports = {
         }
     }
 };
+
+if (isProd) {
+    module.exports.output.filename = '[name].[hash].js'
+}
