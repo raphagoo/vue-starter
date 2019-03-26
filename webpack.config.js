@@ -9,6 +9,7 @@ const { BaseHrefWebpackPlugin } = require('base-href-webpack-plugin');
 
 const env = process.env.NODE_ENV || 'development'
 const isDev = env === 'development'
+const isProd = env === 'production'
 
 const publishConfig = mri(process.argv.slice(2))['publish-config'] || true
 const target = (publishConfig === true) ? env : publishConfig;
