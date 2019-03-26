@@ -1,3 +1,4 @@
+const webpack = require('webpack')
 const path = require(`path`)
 const fs = require('fs')
 const chalk = require('chalk')
@@ -24,6 +25,9 @@ if (fs.existsSync(configPath)) {
 
 const baseHref = require(configPath).baseHref || '/';
 console.log(chalk.black.bgBlue('INFO') + ' baseHref:', baseHref)
+
+const version = require(path.resolve(__dirname, 'package.json')).version
+console.log(chalk.black.bgBlue('INFO') + ' version:', version)
 
 module.exports = {
     mode: env,
@@ -98,6 +102,9 @@ module.exports = {
         }),
         new BaseHrefWebpackPlugin({
             baseHref
+        }),
+        new webpack.DefinePlugin({
+            VERSION: JSON.stringify(version),
         }),
     ],
     devtool: 'inline-source-map',

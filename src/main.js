@@ -10,6 +10,7 @@ import store from './store'
 Vue.config.productionTip = false
 
 $log.info('config:', config);
+$log.info('main.js VERSION', VERSION); // eslint-disable-line no-undef
 
 new Vue({
     router,
