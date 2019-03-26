@@ -9,6 +9,7 @@ Here is the commented list of dependencies.
 ### frontend
 
 * [ ] [`@babel/polyfill`](https://babeljs.io/docs/en/next/babel-polyfill.html) *Polyfill (old browsers compatibility)*
+* [x] [`axios`](https://www.npmjs.com/package/axios) *needs 3rd party Promise polyfill*
 * [ ] [`lodash`](https://www.npmjs.com/package/lodash)
 * [ ] [`promise-polyfill`](https://www.npmjs.com/package/promise-polyfill) *not sure if needed with preset-env*
 * [x] [`vue`](https://vuejs.org) *the Main thing*
@@ -58,10 +59,6 @@ Here is the commented list of dependencies.
 
 ## TODO
 
-* choose and add XHR facilities (tests again [REST test test...](https://resttesttest.com))
-  * [ ] [`axios`](https://www.npmjs.com/package/axios) *needs 3rd party Promise polyfill (my 1st choice)*
-  * [ ] [`whatwg-fetch`](https://github.com/github/fetch) *isomorphic fetch, lower level than the former*
-  * [ ] [`isomorphic-fetch`](https://github.com/matthew-andrews/isomorphic-fetch) *another isomorphic fetch*
 * choose a responsive CSS grid (UI frameworks may do the trick, but I prefer something lighter):
   * [ ] [`avalanche`](http://colourgarden.net/avalanche/) *responsive grid system*
   * [ ] [`flexboxgrid`](http://flexboxgrid.com/) *another responsive grid system (my 1st choice)*

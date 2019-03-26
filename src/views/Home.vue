@@ -1,16 +1,17 @@
 <template>
   <div class="home">
-    <SampleComponent/>
+    <p>Hello word</p>
+    <ApiConsumption/>
   </div>
 </template>
 
 <script>
-import SampleComponent from '../components/SampleComponent.vue'
+import ApiConsumption from '../components/ApiConsumption.vue'
 
 export default {
     name: 'home',
     components: {
-        SampleComponent
+        ApiConsumption
     }
 }
 </script>
