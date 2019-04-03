@@ -56,7 +56,7 @@ Note you can change the port (see [devServe.port](https://webpack.js.org/configu
 * directly in the CLI:
 
   ```bash
-  npm start --port 9000
+  npm start --port=9000
   ```
 
 ## Building the app
