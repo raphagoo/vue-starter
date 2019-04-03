@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>Example of received data:</p>
+        <p>Example of received data from API using Axios:</p>
         <pre>{{ received }}</pre>
         <!-- <LocalComponant1></LocalComponant1> -->
     </div>
