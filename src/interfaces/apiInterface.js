@@ -1,15 +1,24 @@
 import $config from 'config'
 import axios from 'axios'
 
-function _get(endpoint, config) {
+const api = axios.create({
+    baseURL: $config.api.baseUrl,
+});
 
-    const url = $config.api.baseUrl + endpoint;
+// you may want to add interceptors to instance
+// api.interceptors.request.use(
+//     (config) => {
+//         if (typeof config === 'undefined') {
+//             config = {};
+//         }
+//         if (typeof config.headers === 'undefined') {
+//             config.headers = {};
+//         }
+//         config.headers['My-Header'] = 'value';
 
-    return axios.get(url, config);
-}
+//         return config
+//     },
+//     (error) => Promise.reject(error)
+// )
 
-// TODO use Axios.create
-// https://alligator.io/vuejs/rest-api-axios/
-export default {
-    get: (endpoint, config) => _get(endpoint, config),
-}
+export default api

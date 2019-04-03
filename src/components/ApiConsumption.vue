@@ -8,7 +8,6 @@
 
 <script>
 import $log from 'logger'
-import api from '../interfaces/apiInterface.js'
 // import LocalComponant1 from './localComponent1.vue';
 
 export default {
@@ -22,7 +21,7 @@ export default {
     created: function () {
         $log.info('ApiConsumption.created');
 
-        api.get('/get')
+        this.$api.get('/get')
         .then(response => {
             $log.info('ApiConsumption.created.then');
             $log.debug('ApiConsumption.created.then.response: ', response);
