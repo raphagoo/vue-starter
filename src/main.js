@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import $log from 'logger'
+import logger from 'logger'
 
 import App from './App.vue'
 import config from 'config'
@@ -10,11 +10,12 @@ import api from './interfaces/apiInterface'
 // prevents from display notice about running in dev mode
 Vue.config.productionTip = false
 
-// make api available everywhere
+// make api and log available everywhere
 Vue.prototype.$api = api
+Vue.prototype.$log = logger
 
-$log.info('config:', config);
-$log.info('main.js VERSION', VERSION); // eslint-disable-line no-undef
+logger.info('config:', config);
+logger.info('main.js VERSION', VERSION); // eslint-disable-line no-undef
 
 new Vue({
     router,

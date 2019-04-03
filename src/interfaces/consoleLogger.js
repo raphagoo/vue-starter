@@ -15,6 +15,18 @@
  *     import $log from 'logger'
  *     // ...
  *     $log.info('my message')
+ *
+ * or, as Vue property:
+ * // main.js
+ * import logger from 'logger'
+ * Vue.prototype.$log = logger
+ * // ...
+ * new Vue({
+ *     created () {
+ *         // in any method of instanciated Vue:
+ *         this.$log.info('my message')
+ *     }
+ * })
  */
 import $config from 'config'
 
