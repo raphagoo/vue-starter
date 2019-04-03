@@ -1,6 +1,6 @@
 # vue-starter
 
-vueJs starter kit, based on my own (and very light) [react experience](https://github.com/psancho/gotoReact)
+vueJs starter kit, is my new webapp starter: initialy I was on the React road, but VueJs took its place...
 
 
 [![Dependency Status](https://david-dm.org/psancho/vue-starter/status.svg)](https://david-dm.org/psancho/vue-starter#info=dependencies) [![devDependency Status](https://david-dm.org/psancho/vue-starter/dev-status.svg)](https://david-dm.org/psancho/vue-starter#info=devDependencies)
@@ -34,15 +34,15 @@ npm start
 
 Go to http://localhost:8080 in your browser.
 
-Note you can change the port  (see [devServe.port](https://webpack.js.org/configuration/dev-server/#devserverport) doc):
+Note you can change the port (see [devServe.port](https://webpack.js.org/configuration/dev-server/#devserverport) doc) in 3 ways:
 
-* either in the `scripts` section of the `package.json`
+* in the `scripts` section of the `package.json`
 
   ```json
   "start": "cross-env NODE_ENV=development webpack-dev-server --hot --port 9000"
   ```
 
-* or in `webpack.config.js`
+* in `webpack.config.js`
 
   ```javascript
   module.exports = {
@@ -51,6 +51,12 @@ Note you can change the port  (see [devServe.port](https://webpack.js.org/config
           port: 9000
       }
   };
+  
+  ```
+* directly in the CLI:
+
+  ```bash
+  npm start --port 9000"
   ```
 
 ## Building the app
