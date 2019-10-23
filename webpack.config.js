@@ -108,6 +108,10 @@ module.exports = {
         }),
     ],
     devtool: 'inline-source-map',
+    devServer: {
+        // prevents Content-Security-Policy header (that blocks links to subroutes)
+        historyApiFallback: true,
+    },
     resolve: {
         alias: {
             config$: configPath,
