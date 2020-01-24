@@ -1,9 +1,8 @@
 # vue-starter
 
-vueJs starter kit, is my new webapp starter: initialy I was on the React road, but VueJs took its place...
+The structure of my usuals Vue projects
 
-
-[![Dependency Status](https://david-dm.org/psancho/vue-starter/status.svg)](https://david-dm.org/psancho/vue-starter#info=dependencies) [![devDependency Status](https://david-dm.org/psancho/vue-starter/dev-status.svg)](https://david-dm.org/psancho/vue-starter#info=devDependencies)
+[![Dependency Status](https://david-dm.org/raphagoo/vue-starter/status.svg)](https://david-dm.org/raphagoo/vue-starter#info=dependencies) [![devDependency Status](https://david-dm.org/raphagoo/vue-starter/dev-status.svg)](https://david-dm.org/raphagoo/vue-starter#info=devDependencies)
 
 Here is a more complete [description](./description.md).
 
