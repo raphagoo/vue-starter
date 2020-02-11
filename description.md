@@ -15,6 +15,9 @@ Here is the commented list of dependencies.
 * [x] [`vue`](https://vuejs.org) *the Main thing*
 * [x] [`vue-router`](https://router.vuejs.org/) *the official one*
 * [x] [`vuex`](https://vuex.vuejs.org/) *state management pattern for Vue*
+* [x] [`vuex-persistedstate`](https://www.npmjs.com/package/vuex-persistedstate) *Persistance of vuex store on refresh*
+* [x] [`vue-material`](https://vuematerial.io/) *Material design for vue*
+* [x] [`sweetalert2`](https://sweetalert2.github.io/) *Smooth and responsive alert system*
 
 ### dev
 
@@ -56,16 +59,3 @@ Here is the commented list of dependencies.
 * [x] [`webpack-cli`](https://www.npmjs.com/package/webpack-cli): *needed with webpack ^4.0.1*
 * [x] [`webpack-dev-server`](https://www.npmjs.com/package/webpack-dev-server) *dev server with hot reload*
 * [ ] [`webpack-merge`](https://www.npmjs.com/package/webpack-merge) *merge 2 objects*
-
-## TODO
-
-* choose a responsive CSS grid (UI frameworks may do the trick, but I prefer something lighter):
-  * [ ] [`avalanche`](http://colourgarden.net/avalanche/) *responsive grid system*
-  * [ ] [`flexboxgrid`](http://flexboxgrid.com/) *another responsive grid system (my 1st choice)*
-* other things:
-  * [ ] [`mini-css-extract-plugin`](https://vue-loader.vuejs.org/guide/extract-css.html) *to have css hot reload*
-  * read again vueJs doc (many things I didn't had time to try).
-
-## PS
-
-I don't like 2 spaces indents
